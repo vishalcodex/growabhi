@@ -782,3 +782,187 @@
 <!------------- Become Students Section End --------->
 
 
+<style>
+    .testimonial-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .testimonial-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .testimonial-role {
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+
+   <div class="container mt-5 mb-5">
+    <h1 class="text-center mb-4"><span>Testimonials </span> </h1>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First slide -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="testimonial-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
+                <h5 class="testimonial-name">John Doe</h5>
+                <p class="testimonial-role">Web Developer</p>
+                <p>"Bootstrap makes web development so much easier and faster!"</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="testimonial-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
+                <h5 class="testimonial-name">Jane Smith</h5>
+                <p class="testimonial-role">UI/UX Designer</p>
+                <p>"I love the flexibility and the built-in responsive design in Bootstrap!"</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="testimonial-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
+                <h5 class="testimonial-name">Mike Johnson</h5>
+                <p class="testimonial-role">Project Manager</p>
+                <p>"Using Bootstrap saves so much development time. It's a game-changer!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second slide -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="testimonial-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
+                <h5 class="testimonial-name">Emily Davis</h5>
+                <p class="testimonial-role">Software Engineer</p>
+                <p>"Bootstrap is my go-to framework for every project. It's so reliable."</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="testimonial-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
+                <h5 class="testimonial-name">Chris Wilson</h5>
+                <p class="testimonial-role">Freelancer</p>
+                <p>"With Bootstrap, I can deliver professional websites much faster."</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="testimonial-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
+                <h5 class="testimonial-name">Sarah Brown</h5>
+                <p class="testimonial-role">Digital Marketer</p>
+                <p>"It's easy to use and offers great results, even for non-developers like me!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+ <div class="container mt-5 mb-4">
+    <h1 class="text-center mb-4"> <span> Our Clients </span></h1>
+    <div class="row g-4">
+      <!-- Client 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 1 Logo" class="client-logo">
+          <p class="client-name">Client 1</p>
+        </div>
+      </div>
+      <!-- Client 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 2 Logo" class="client-logo">
+          <p class="client-name">Client 2</p>
+        </div>
+      </div>
+      <!-- Client 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 3 Logo" class="client-logo">
+          <p class="client-name">Client 3</p>
+        </div>
+      </div>
+      <!-- Client 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 4 Logo" class="client-logo">
+          <p class="client-name">Client 4</p>
+        </div>
+      </div>
+      <!-- Client 5 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 5 Logo" class="client-logo">
+          <p class="client-name">Client 5</p>
+        </div>
+      </div>
+      <!-- Client 6 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 6 Logo" class="client-logo">
+          <p class="client-name">Client 6</p>
+        </div>
+      </div>
+      <!-- Client 7 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 7 Logo" class="client-logo">
+          <p class="client-name">Client 7</p>
+        </div>
+      </div>
+      <!-- Client 8 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="client-logo-card">
+          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 8 Logo" class="client-logo">
+          <p class="client-name">Client 8</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <style>
+    .client-logo-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .client-logo-card:hover {
+      transform: scale(1.05);
+    }
+    .client-logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .client-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
