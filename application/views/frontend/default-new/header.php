@@ -34,7 +34,7 @@
   }
 
   h1, h2, h3, h4, h5, h6{
-    color: white !important;
+    color: #272625 !important;
   }
 
 /*   body, section
