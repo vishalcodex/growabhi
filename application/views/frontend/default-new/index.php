@@ -75,13 +75,7 @@ if($language_dirs){
 	</style>
 
 
-<style type="text/css">
-  body
-  {
-    background: black;
-  }
 
-</style>
 
 </head>
 <body class="<?php echo $this->session->userdata('theme_mode'); ?> bg_custom1" >

@@ -1,5 +1,5 @@
 <div id="btnContainer ">
-    <div class="list-card-control d-flex align-items-center">
+    <div class="list-card-control d-flex align-items-center ">
         
         <button class="btn list-btn <?php if($layout == 'list') echo 'active'; ?>" title="<?php echo get_phrase('List view') ?>" data-bs-toggle="tooltip" onclick="actionTo('<?php echo site_url('home/set_layout_to_session?layout=list'); ?>', 'post')"><i class="fa-solid fa-bars "></i></button>
         <button class="btn list-btn <?php if($layout == 'grid') echo 'active'; ?>" title="<?php echo get_phrase('Grid view') ?>" data-bs-toggle="tooltip" onclick="actionTo('<?php echo site_url('home/set_layout_to_session?layout=grid'); ?>', 'post')"><i class="fa-solid fa-th"></i></button>

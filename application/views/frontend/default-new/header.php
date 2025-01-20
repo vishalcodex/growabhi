@@ -5,50 +5,7 @@
 <?php $admin_login = $this->session->userdata('admin_login'); ?>
 <?php if($user_id > 0){$user_details = $this->user_model->get_all_user($user_id)->row_array();} ?>
 <style type="text/css">
-  .bg_custom1
-  {
-    background-color: #0b0e13 !important;
-    /*color: white !important;*/
-  }
-
-    
-     .bg_custom2
-  {
-    background-color: #10141a !important;
-    /*color: white !important;*/
-  }
-
-/**/
-   .bg_custom3
-  {
-    background-color: #2f3136 !important;
-    /*color: white !important;*/
-  }
-
-
-
-
-  .bg_custom p, a, i, h1, h2
-  {
-      /*color: white !important;*/
-  }
-
-  h1, h2, h3, h4, h5, h6{
-    color: #272625 !important;
-    
-  }
-/**/
-/*   body, section
-   {
-     background-color: black !important;
-    color: white !important;
-   } */
-
-
-   .icon
-   {
-    color: white !important;
-   }
+ 
 </style>
 
 <header class="bg_custom1">

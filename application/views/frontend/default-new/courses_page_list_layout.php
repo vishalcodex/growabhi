@@ -1,4 +1,4 @@
-<div class="grid-view-body courses courses-list-view-body">
+<div class="grid-view-body courses courses-list-view-body ">
 
     <?php include 'courses_page_sorting_section.php'; ?>
 

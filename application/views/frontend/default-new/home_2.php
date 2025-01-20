@@ -524,7 +524,7 @@
 <!---------  Expert Instructor Start ---------------->
 <?php $top_instructor_ids = $this->crud_model->get_top_instructor(10); ?>
 <?php if(count($top_instructor_ids) > 0): ?>
-<section class="courses h-2-courses ">
+<section class="courses h-2-courses bg_custom2">
     <div class="conntainer">
         <div class="row justify-content-center">
             <div class="col-lg-6">

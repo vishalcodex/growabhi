@@ -1,5 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+/*Custome CSS*/
+
+  .grid-view, .courses-list-view, .grid-view-body, .courses, .pagenation-items, .course-decription
+  {
+    background-color: #10141a !important;
+  }
+
+  .checkPropagation, .courses-card-body
+  {
+    background-color: #2f3136 !important; 
+  }
+
+ .bg_custom1
+  {
+    background-color: #0b0e13 !important;
+    /*color: white !important;*/
+  }
+
+    
+     .bg_custom2, .course-all-category
+  {
+    background-color: #10141a !important;
+    /*color: white !important;*/
+  }
+
+/**/
+   .bg_custom3
+  {
+    background-color: #2f3136 !important;
+    /*color: white !important;*/
+  }
+
+
+
+
+  .bg_custom p, a, i, h1, h2
+  {
+      /*color: white !important;*/
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    color: #49a97a !important;
+    
+  }
+/**/
+/*   body, section
+   {
+     background-color: black !important;
+    color: white !important;
+   } */
+
+
+   .icon
+   {
+    color: white !important;
+   }
+
+   .bread-crumb
+   {
+       background: linear-gradient(#2f3136, #0b0e13) !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow only at the bottom */
+
+   }
+
+   /*Custome CSS End*/
+
+
+
 :root{
   --primary-color : #6E798A;
   /* --primary-color : #676C7D; */
@@ -36,6 +104,8 @@
   --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  
 }
+
+
 
 .home_1st{
   --primary-color : #676C7D;

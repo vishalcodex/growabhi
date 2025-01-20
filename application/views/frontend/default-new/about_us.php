@@ -1,7 +1,7 @@
 <?php include "breadcrumb.php"; ?>
 
 <!------- body section Start ------>
-<section class="privacy-policy">
+<section class="privacy-policy bg_custom">
     <div class="container">
         <div class="row my-5">
             <div class="col-12">

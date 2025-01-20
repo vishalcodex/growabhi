@@ -1,4 +1,4 @@
-<div class="grid-view-body courses">
+<div class="grid-view-body courses" >
     <?php include 'courses_page_sorting_section.php'; ?>
 
     <div class="courses-card ">
@@ -16,7 +16,7 @@
                     $average_ceil_rating = 0;
                 }
                 ?>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
                     <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($course['title'])) . '/' . $course['id']); ?>" class="checkPropagation courses-card-body">
                         <div class="courses-card-image">
                             <img loading="lazy" src="<?php echo $this->crud_model->get_course_thumbnail_url($course['id']); ?>">
