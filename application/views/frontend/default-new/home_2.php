@@ -10,6 +10,52 @@
     .course-item-one .content .title:has(~ .info) {
         padding-bottom: 5px;
     }
+
+    /* Custome CSS*/
+
+      .grid-view, .courses-list-view, .grid-view-body, .courses, .pagenation-items, .course-decription
+  {
+    background-color: #10141a !important;
+  }
+
+  .checkPropagation, .courses-card-body
+  {
+    background-color: #2f3136 !important; 
+  }
+
+ .bg_custom1
+  {
+    background-color: #0b0e13 !important;
+    /*color: white !important;*/
+  }
+
+    
+     .bg_custom2, .course-all-category
+  {
+    background-color: #10141a !important;
+    /*color: white !important;*/
+  }
+
+/**/
+   .bg_custom3
+  {
+    background-color: #2f3136 !important;
+    /*color: white !important;*/
+  }
+
+
+
+
+   p, a, i, h1, h2, h3, h4, h5, h6,
+  {
+      color: white !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, p{
+    color: white !important;
+    
+  }
+
 </style>
 <!---------- Banner Section Start ---------------->
 <section class="h-1-banner h-2-banner mt-5 bg_custom1">
@@ -367,7 +413,7 @@
 
 <?php if(get_frontend_settings('latest_course_section') == 1): ?>
 <!---------- Latest courses Section start --------------->
-<section class="courses grid-view-body pb-4 bg_custom2">
+<section class="courses grid-view-body pb-4 bg_custom2" >
     <div class="container">
         <h1 class="text-center"><span><?php echo site_phrase('top') . ' 10 ' . site_phrase('latest_courses'); ?></span></h1>
         <p class="text-center"><?php echo site_phrase('These_are_the_most_latest_courses_among_Listen_Courses_learners_worldwide')?></p>
@@ -387,7 +433,7 @@
                         $average_ceil_rating = 0;
                     }
                     ?>
-                    <div class="single-popup-course ">
+                    <div class="single-popup-course " >
                         <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($latest_course['title'])) . '/' . $latest_course['id']); ?>" id="latest_course_<?php echo $latest_course['id']; ?>" class="checkPropagation courses-card-body">
                             <div class="courses-card-image ">
                                 <img loading="lazy" src="<?php echo $this->crud_model->get_course_thumbnail_url($latest_course['id']); ?>">
@@ -398,7 +444,7 @@
                                     <h3><?php echo get_phrase($latest_course['level']); ?></h3>
                                 </div> 
                             </div>
-                            <div class="courses-text bg_custom3">
+                            <div class="courses-text bg_custom3" >
                                 <h5 class="mb-2"><?php echo $latest_course['title']; ?></h5>
                                 <div class="review-icon">
                                     <div class="review-icon-star align-items-center">
@@ -413,21 +459,21 @@
                                         </span>
                                     </div>
                                 </div>
-                                <p class="ellipsis-line-2"><?php echo $latest_course['short_description'] ?></p>
-                                <div class="courses-price-border">
+                                <p class="ellipsis-line-2"  style="color:white !important"><?php echo $latest_course['short_description'] ?></p>
+                                <div class="courses-price-border" >
                                     <div class="courses-price">
                                         <div class="courses-price-left">
                                             <?php if($latest_course['is_free_course']): ?>
                                                 <h5><?php echo get_phrase('Free'); ?></h5>
                                             <?php elseif($latest_course['discount_flag']): ?>
-                                                <h5><?php echo currency($latest_course['discounted_price']); ?></h5>
-                                                <p class="mt-1"><del><?php echo currency($latest_course['price']); ?></del></p>
+                                                <h5  style="color:white !important"><?php echo currency($latest_course['discounted_price']); ?></h5>
+                                                <p class="mt-1"  style="color:white !important"><del><?php echo currency($latest_course['price']); ?></del></p>
                                             <?php else: ?>
-                                                <h5><?php echo currency($latest_course['price']); ?></h5>
+                                                <h5  style="color:white !important"><?php echo currency($latest_course['price']); ?></h5>
                                             <?php endif; ?>
                                         </div>
                                         <div class="courses-price-right ">
-                                            <p class="m-0"><i class="fa-regular fa-clock p-0 text-15px"></i> <?php echo $course_duration; ?></p>
+                                            <p class="m-0"  style="color:white !important"><i class="fa-regular fa-clock p-0 text-15px"></i> <?php echo $course_duration; ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -705,7 +751,7 @@
                         </div>
                         <div class="courses-text bg_custom3">
                             <h5><?php echo $latest_blog['title']; ?></h5>
-                            <p class="ellipsis-line-2"><?php echo ellipsis(strip_tags(htmlspecialchars_decode_($latest_blog['description'])), 150); ?></p>
+                            <p class="ellipsis-line-2"  style="color:white !important"><?php echo ellipsis(strip_tags(htmlspecialchars_decode_($latest_blog['description'])), 150); ?></p>
                             <div class="courses-price-border">
                                 <div class="courses-price">
                                     <div class="courses-price-left">
@@ -713,7 +759,7 @@
                                         <h5><?php echo $user_details['first_name'].' '.$user_details['last_name']; ?></h5>
                                     </div>
                                     <div class="courses-price-right ">
-                                        <p><?php echo get_past_time($latest_blog['added_date']); ?></p>
+                                        <p  style="color:white !important"><?php echo get_past_time($latest_blog['added_date']); ?></p>
                                     </div>
                                 </div>
                             </div>

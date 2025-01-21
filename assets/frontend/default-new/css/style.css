@@ -2,48 +2,7 @@
 
 /*Custome CSS*/
 
-  .grid-view, .courses-list-view, .grid-view-body, .courses, .pagenation-items, .course-decription
-  {
-    background-color: #10141a !important;
-  }
 
-  .checkPropagation, .courses-card-body
-  {
-    background-color: #2f3136 !important; 
-  }
-
- .bg_custom1
-  {
-    background-color: #0b0e13 !important;
-    /*color: white !important;*/
-  }
-
-    
-     .bg_custom2, .course-all-category
-  {
-    background-color: #10141a !important;
-    /*color: white !important;*/
-  }
-
-/**/
-   .bg_custom3
-  {
-    background-color: #2f3136 !important;
-    /*color: white !important;*/
-  }
-
-
-
-
-  .bg_custom p, a, i, h1, h2
-  {
-      /*color: white !important;*/
-  }
-
-  h1, h2, h3, h4, h5, h6, p{
-    color: white !important;
-    
-  }
 /**/
 /*   body, section
    {

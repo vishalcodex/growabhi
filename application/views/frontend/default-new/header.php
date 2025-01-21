@@ -8,9 +8,9 @@
  
 </style>
 
-<header class="bg_custom1">
+<header class="bg_custom1" >
   <!-- Sub Header Start -->
-  <div class="sub-header bg_custom2" >
+  <div class="sub-header bg_custom2 bg_black" style="background-color: #10141a !important">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
