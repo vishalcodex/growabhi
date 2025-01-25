@@ -51,15 +51,48 @@
       color: white !important;
   }
 
-  h1, h2, h3, h4, h5, h6, p{
+  h1, h2, h3, h4, h5, h6, p{ 
     color: white !important;
     
   }
 
+  .menu_pro_tgl_bg  h1, h2, h3, h4, h5, h6, p{ 
+    color: black !important;
+    
+  }
+
+
+  /*Button Join now*/
+
+  /* Button style */
+.btn-zoom {
+    background-color: #ff5c5c; /* Matches the button color from your image */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 28px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.btn-zoom:hover {
+    transform: scale(1.1); /* Zooms the button */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds shadow */
+        background-color: #ff5c5c; /* Matches the button color from your image */
+          color: white;
+}
+
+
 </style>
 <!---------- Banner Section Start ---------------->
-<section class="h-1-banner h-2-banner mt-5 bg_custom1">
-    <div class="container">
+<section class="h-1-banner h-2-banner">
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                    <source src="<?= base_url();?>assets/frontend/bgvideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+    <div class="container" style="position: relative; z-index: 1; color: white; text-align: center; padding-top: 10%;">
         <div class="h-2-banner-text">
             <div class="row">
                 <div class="col-lg-2"></div>
@@ -90,6 +123,11 @@
                 <div class="col-lg-2">
                 </div>
             </div>
+
+              <div class=" justify-content-center align-items-center">
+                    <button class="btn btn-zoom"> <a href="<?= base_url();?>sign_up" style="color: white !important"> <i class="fas fa-arrow-right me-2"></i> JOIN NOW <i class="fas fa-arrow-left me-2"></i> </a></button>
+                </div>
+
            <!--  <div class="banner-image">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-6">
@@ -252,6 +290,8 @@
                 <?php endforeach; ?>
             </div>
         </div>
+
+
         
     </div>
 </section>
@@ -559,6 +599,12 @@
             </div>
         </div>
     </div>
+       <center>
+            <div class=" justify-content-center align-items-center">
+                    <button class="btn btn-zoom"> <a href="<?= base_url();?>sign_up" style="color: white !important"> <i class="fas fa-arrow-right me-2"></i> JOIN NOW <i class="fas fa-arrow-left me-2"></i> </a></button>
+                </div>
+
+            </center>
 </section>
 <!---------- Latest courses Section End --------------->
 <?php endif; ?>
@@ -925,68 +971,35 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+             <center>
+            <div class=" justify-content-center align-items-center">
+                    <button class="btn btn-zoom"> <a href="<?= base_url();?>sign_up" style="color: white !important"> <i class="fas fa-arrow-right me-2"></i> JOIN NOW <i class="fas fa-arrow-left me-2"></i> </a></button>
+                </div>
+
+            </center>
+
+
   </div>
 
 
  <div class="container mt-5 mb-4">
     <h1 class="text-center mb-4"> <span> Our Clients </span></h1>
-    <div class="row g-4">
+    <div class="row g-4  justify-content-center align-items-center">
       <!-- Client 1 -->
       <div class="col-6 col-md-4 col-lg-3">
         <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 1 Logo" class="client-logo">
-          <p class="client-name">Client 1</p>
+          <img src="<?= base_url();?>assets/frontend/img/client/client1.jpeg" alt="Client 1 Logo" class="client-logo rounded">
+          <p class="client-name text-white">Biryani Bar</p>
         </div>
       </div>
       <!-- Client 2 -->
       <div class="col-6 col-md-4 col-lg-3">
         <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 2 Logo" class="client-logo">
-          <p class="client-name">Client 2</p>
+           <img src="<?= base_url();?>assets/frontend/img/client/client2.jpeg" alt="Client 1 Logo" class="client-logo rounded">
+          <p class="client-name  text-white">Ginger & Honey Cafe</p>
         </div>
       </div>
-      <!-- Client 3 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 3 Logo" class="client-logo">
-          <p class="client-name">Client 3</p>
-        </div>
-      </div>
-      <!-- Client 4 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 4 Logo" class="client-logo">
-          <p class="client-name">Client 4</p>
-        </div>
-      </div>
-      <!-- Client 5 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 5 Logo" class="client-logo">
-          <p class="client-name">Client 5</p>
-        </div>
-      </div>
-      <!-- Client 6 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 6 Logo" class="client-logo">
-          <p class="client-name">Client 6</p>
-        </div>
-      </div>
-      <!-- Client 7 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 7 Logo" class="client-logo">
-          <p class="client-name">Client 7</p>
-        </div>
-      </div>
-      <!-- Client 8 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="client-logo-card">
-          <img src="https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png" alt="Client 8 Logo" class="client-logo">
-          <p class="client-name">Client 8</p>
-        </div>
-      </div>
+     
     </div>
   </div>
 
