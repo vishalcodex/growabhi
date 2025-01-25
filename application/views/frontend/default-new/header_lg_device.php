@@ -187,7 +187,7 @@
         </form>
       <?php endif; ?>
 
-      <div class="right-menubar ms-auto">
+      <div class="right-menubar ms-auto" >
 
         <?php if($user_login): ?>
           <li><a class="dropdown-item" href="<?php echo site_url('home/my_courses') ?>"><?php echo site_phrase('My Course') ?></a></li>
@@ -266,18 +266,18 @@
               <div class="menu_pro_tgl_bg">
                 <div class="path-pos">
                   <a href="#"><img loading="lazy" src="<?php echo $this->user_model->get_user_image_url($user_id); ?>" alt="User Image"/></a>
-                  <a href="#"><h4><?php echo $user_details['first_name'].' '.$user_details['last_name']; ?></h4></a>
-                  <p><?php echo $user_details['email']; ?></p>
+                  <a href="#"><h4 style="color:black !important"><?php echo $user_details['first_name'].' '.$user_details['last_name']; ?></h4></a>
+                  <p style="color:black !important"><?php echo $user_details['email']; ?></p>
                   <ul>
                     <?php if($user_login): ?>
                       
-                      <?php if($user_details['is_instructor'] == 1): ?>
+                     <!--  <?php if($user_details['is_instructor'] == 1): ?>
                         <li class="user-dropdown-menu-item"><a href="<?php echo site_url('user/dashboard'); ?>"><i class="fas fa-columns"></i><?php echo site_phrase('Instructor Dashboard'); ?></a></li>
                       <?php else: ?>
                         <?php if (get_settings('allow_instructor') == 1) : ?>
                           <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/become_an_instructor'); ?>"><i class="fas fa-columns"></i><?php echo site_phrase('Become an instructor'); ?></a></li>
                         <?php endif; ?>
-                      <?php endif; ?>
+                      <?php endif; ?> -->
 
                       <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/my_courses'); ?>"><i class="far fa-gem"></i><?php echo site_phrase('my_courses'); ?></a></li>
                       <li class="user-dropdown-menu-item"><a href="<?php echo site_url('home/my_wishlist'); ?>"><i class="far fa-heart"></i><?php echo site_phrase('my_wishlist'); ?></a></li>

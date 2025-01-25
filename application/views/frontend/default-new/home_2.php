@@ -45,22 +45,27 @@
 
 
 
-
+/*
    p, a, i, h1, h2, h3, h4, h5, h6,
   {
       color: white !important;
   }
-
+*/
   h1, h2, h3, h4, h5, h6, p{ 
     color: white !important;
     
   }
 
+  .notify-details 
+  {
+    color:black !important;
+  }
+/*
   .menu_pro_tgl_bg  h1, h2, h3, h4, h5, h6, p{ 
     color: black !important;
     
   }
-
+*/
 
   /*Button Join now*/
 
