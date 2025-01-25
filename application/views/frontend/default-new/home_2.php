@@ -112,7 +112,7 @@
                         }
                         ?>
                     </h1>
-                    <p><?php echo site_phrase(get_frontend_settings('banner_sub_title')); ?></p>
+                    <h3 class="text-white mb-3 mt-2"><?php echo site_phrase(get_frontend_settings('banner_sub_title')); ?></h3>
                     <div class="h-2-search-bar">
                          <form action="<?php echo site_url('home/search'); ?>" method="get">
                             <input class="form-control" type="text" placeholder="<?php echo get_phrase('What do you want to learn'); ?>" name="query">
