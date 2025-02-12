@@ -1,5 +1,8 @@
 <style>
 
+
+
+
   /* Hide div on mobile (max-width 768px, covers most tablets and smaller screens) */
 @media (max-width: 768px) {
     .hide-on-mobile {
@@ -13,6 +16,88 @@
     }
 }
 
+/*CSS for Socail Media icons*/
+
+/* Style for the social media icons container */
+.social-icons {
+  position: fixed; /* Makes the icons fixed to the left side */
+  top: 50%; /* Centers the icons vertically */
+  left: 0; /* Aligns the icons to the left edge */
+  transform: translateY(-50%); /* Adjusts the alignment */
+  display: flex;
+  flex-direction: column; /* Stacks the icons vertically */
+  gap: 2px; /* Adds space between icons */
+  z-index: 1000; /* Ensures it appears above other elements */
+  margin-left: -18px !important;
+}
+
+/* Style for individual social media icons */
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  text-decoration: none;
+}
+
+.social-icons a img {
+  width: 60px; 
+
+}
+
+/*CSS for FAQ*/
+
+/* Form Container */
+    .form-container {
+      background-color: #f84087; /* Pink background */
+      border-radius: 10px;
+      padding: 10px;
+      /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);*/
+      position: relative;
+    }
+
+    /* Form Title */
+    .form-container h3 {
+      color: #fdd835; /* Yellow color for title */
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    /* Submit Button */
+    .form-container button {
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 10px 0;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      width: 150px !important;
+
+    }
+
+    .form-container button:hover {
+      background-color: #e0a800;
+    }
+
+    /* FAQ Section */
+    .faq-container .accordion-button {
+      border: 2px dashed #f84087; /* Pink dashed border */
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .faq-container .accordion-button:not(.collapsed) {
+      background-color: #ffe4f2;
+    }
+
+    .faq-container .accordion-body {
+      font-size: 0.95rem;
+    }
+
+    /*CSS FAQ Ends*/
 
     .ellipsis-line-1 {
         display: -webkit-box!important; 
@@ -112,6 +197,23 @@
 
 
 </style>
+
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank">
+    <img src="<?= base_url();?>assets/frontend/img/icon/facebook.png" alt="Facebook">
+  </a>
+  <a href="https://linkedin.com" target="_blank">
+    <img src="<?= base_url();?>assets/frontend/img/icon/linkdin.png" alt="LinkedIn">
+  </a>
+  <a href="https://youtube.com" target="_blank">
+    <img src="<?= base_url();?>assets/frontend/img/icon/youtube.png" alt="YouTube">
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="<?= base_url();?>assets/frontend/img/icon/instagram.png" alt="Instagram">
+  </a>
+</div>
+
+
 <!---------- Banner Section Start ---------------->
 <section class="h-1-banner h-2-banner">
   <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
@@ -403,6 +505,7 @@
   "
 >
 </div> -->
+
 
 
 
@@ -823,28 +926,28 @@
                 <div class="row">
                     <div class="col-6 mb-4">
                         <div class="stat-card">
-                            <img src="<?= base_url();?>assets/frontend/img/home/cap.png" class="img-fluid" style="width: 30%;height: 80px">
+                            <img src="<?= base_url();?>assets/frontend/img/home/cap.png" class="img-fluid" style="width: 30% !important;">
                             <h1>25,000<span style="color:#45bcff">+</span></h1>
                             <p class="text-dark mt-2 mb-4" style="font-size: 16px">Students Enrolled</p>
                         </div>
                     </div>
                     <div class="col-6 mb-4">
                         <div class="stat-card">
-                             <img src="<?= base_url();?>assets/frontend/img/home/education.png" class="img-fluid" style="width: 30%;height: 80px">
+                             <img src="<?= base_url();?>assets/frontend/img/home/education.png" class="img-fluid" style="width: 30% !important;">
                             <h1>4<span style="color:#ed4883">+</span></h1>
                             <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Years of Educational</p>
                         </div>
                     </div>
                     <div class="col-6 mb-4">
                         <div class="stat-card">
-                            <img src="<?= base_url();?>assets/frontend/img/home/faculty.png" class="img-fluid" style="width: 30%;height: 80px">
+                            <img src="<?= base_url();?>assets/frontend/img/home/faculty.png" class="img-fluid" style="width: 30% !important;">
                             <h1>25<span style="color:#ffb906">+</span></h1>
                             <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Expert Faculties</p>
                         </div>
                     </div>
                     <div class="col-6 mb-4">
                         <div class="stat-card">
-                             <img src="<?= base_url();?>assets/frontend/img/home/country.png" class="img-fluid" style="width: 20%;height: 80px">
+                             <img src="<?= base_url();?>assets/frontend/img/home/country.png" class="img-fluid" style="width: 30% !important;">
                             <h1>15<span style="color:#9747ff">+</span></h1>
                             <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Number of Countries</p>
                         </div>
@@ -976,29 +1079,57 @@
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
-                <h1 class="text-center mt-4"><?php echo get_phrase('Frequently Asked Questions') ?></h1>
+                <h1 class="text-center mt-4">Frequently <span style="color:#ffbe17"> Asked </span>  Questions</h1>
                 <p class="text-center mt-4 mb-5"><?php echo get_phrase('Have something to know?') ?> <?php echo get_phrase('Check here if you have any questions about us.') ?></p>
             </div>
             <div class="col-lg-2"></div>
         </div>
+
         <div class="row">
-            <div class="col-md-6 text-center pb-5">
-                <img loading="lazy" width="80%" src="<?php echo site_url('assets/frontend/default-new/image/faq2.jpg') ?>">
-            </div>
+             <div class="col-lg-6">
+               <div class="form-container">
+                <div class="row pt-4 mb-4"> 
+                    <div class="col-lg-4 hide-on-mobile">
+                       <img src="<?= base_url();?>assets/frontend/img/home/formGirl.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-8">
+                        
+                          <h3 class="mb-4">Have a Question?</h3>
+                          <form>
+                            <div class="mb-3">
+                              <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                              <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                              <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                              <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">SUBMIT NOW</button>
+                          </form>
+                        </div>
+                    </div>
+
+                </div>
+          </div>
             <div class="col-md-6">
                 <div class="faq-accrodion mb-0">
                     <div class="accordion" id="accordionFaq">
                         <?php foreach($website_faqs as $key => $faq): ?>
                             <?php if($key > 4) break; ?>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="<?php echo 'faqItemHeading'.$key; ?>">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo 'faqItempanel'.$key; ?>" aria-expanded="true" aria-controls="<?php echo 'faqItempanel'.$key; ?>">
-                                    <?php echo $faq['question']; ?>
+                            <div class="accordion-item mb-3" style="border: 2px dashed #f84087;border-radius: 10px " >
+                              <h2 class="" id="<?php echo 'faqItemHeading'.$key; ?>" >
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo 'faqItempanel'.$key; ?>" aria-expanded="true" aria-controls="<?php echo 'faqItempanel'.$key; ?>" style="font-size: 17px !important">
+                                    <img src="<?= base_url();?>assets/frontend/img/home/checkicon.png" class="img-fluid"> &nbsp; <?php echo $faq['question']; ?>
                                 </button>
                               </h2>
                               <div id="<?php echo 'faqItempanel'.$key; ?>" class="accordion-collapse collapse" aria-labelledby="<?php echo 'faqItemHeading'.$key; ?>"  data-bs-parent="#accordionFaq">
-                                <div class="accordion-body">
-                                    <p><?php echo nl2br($faq['answer']); ?></p>
+                                <div class="accordion-body p-3">
+                                    <p class=""><?php echo nl2br($faq['answer']); ?></p>
                                 </div>
                               </div>
                             </div>
