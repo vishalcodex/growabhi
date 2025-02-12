@@ -1086,7 +1086,7 @@
         </div>
 
         <div class="row">
-             <div class="col-lg-6">
+             <div class="col-lg-6 mb-4">
                <div class="form-container">
                 <div class="row pt-4 mb-4"> 
                     <div class="col-lg-4 hide-on-mobile">
