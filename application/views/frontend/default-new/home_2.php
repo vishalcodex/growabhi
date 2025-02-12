@@ -11,35 +11,37 @@
         padding-bottom: 5px;
     }
 
+
+
     /* Custome CSS*/
 
-      .grid-view, .courses-list-view, .grid-view-body, .courses, .pagenation-items, .course-decription
+     /* .grid-view, .courses-list-view, .grid-view-body, .courses, .pagenation-items, .course-decription
   {
     background-color: #10141a !important;
-  }
+  }*/
 
   .checkPropagation, .courses-card-body
   {
-    background-color: #2f3136 !important; 
+    /*background-color: #2f3136 !important; */
   }
 
  .bg_custom1
   {
-    background-color: #0b0e13 !important;
+    /*background-color: #0b0e13 !important;*/
     /*color: white !important;*/
   }
 
     
      .bg_custom2, .course-all-category
   {
-    background-color: #10141a !important;
+    /*background-color: #10141a !important;*/
     /*color: white !important;*/
   }
 
 /**/
    .bg_custom3
   {
-    background-color: #2f3136 !important;
+    /*background-color: #2f3136 !important;*/
     /*color: white !important;*/
   }
 
@@ -52,9 +54,13 @@
   }
 */
   h1, h2, h3, h4, h5, h6, p{ 
-    color: white !important;
+    /*color: white !important;*/
     
   }
+/*
+  p{
+    color: black !important;
+  }*/
 
   .notify-details 
   {
@@ -160,7 +166,7 @@
         </div>  
     </div>
 </section>
-
+ 
 <section class="world-class mb-0">
     <div class="container">
         <div class="world-class-content">
@@ -216,6 +222,133 @@
     </div>
 </section>
 <!---------- Banner Section End ---------------->
+ 
+<div class="row  justify-content-center text-center text-dark mt-5">
+    
+
+<h1> How GrowAbhi <span style="color:#ffbe17"> Network </span> Work </h1>
+<div class="col-md-8 mt-3">
+    <p> We bridge the gap between learners and expert instructors through our extensive networks, creating a platform for meaningful knowledge exchange. Be a part of our community to embrace the power of accessible education, expert guidance, and collective growth. </p>
+</div>
+
+</div>
+<div
+  class="container-fluid py-5  text-dark"
+  style="
+    background-image: url('http://localhost/growabhi/assets/frontend/img/home/how_work1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  "
+>
+
+  <div class="container text-center">
+    <!-- Top Section: We Grow -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 mt-4">
+        <h3 class="fw-bold">We Grow</h3>
+        <p>
+          Your growth is our priority. Together, we aim to achieve excellence by providing exceptional education and unwavering support.
+
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Section: You Grow and World Grow -->
+    <div class="row align-items-start">
+      <!-- Left Section: You Grow -->
+      <div class="col-md-4 mt-4 text-center">
+        <h3 class="fw-bold">You Grow</h3>
+        <p>
+           Our mission is to support your journey of personal and professional development. We provide the knowledge, skills, and tools you need to succeed and evolve continuously.
+
+        </p>
+      </div>
+
+      <!-- Spacer -->
+      <div class="col-md-4"></div>
+
+      <!-- Right Section: World Grow -->
+      <div class="col-md-4 mt-4 text-center">
+        <h3 class="fw-bold">World Grow</h3>
+        <p>
+             Education has the power to transform lives, communities, and the world. Our vision is to create a ripple effect of knowledge that inspires collective growth and progress.
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div
+  class="container-fluid pt-5 mt-5 pb-5"
+  style="
+    background-image: url('http://localhost/growabhi/assets/frontend/img/home/how_work1.png');
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    width: 100%;
+
+   
+  "
+>
+  <div class="container h-100 d-flex align-items-center mt-5 mb-5">
+    <div class="row text-center w-100">
+          <div class="col-md-4 ">
+        <div class="mb-4">
+        
+          <h3 style="margin-top: 200px">You Grow</h3>
+          <p>
+            Our primary motive is to contribute to your personal and
+            professional growth. We aim to empower you with knowledge, skills,
+            and resources that foster continuous development.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mb-4">
+         
+          <h3>We Grow</h3>
+          <p>
+            As you thrive, so do we. Our success is intertwined with yours. By
+            delivering high-quality education and support.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mb-4">
+         
+          <h3>World Grow</h3>
+          <p>
+            We believe in the transformative power of education to impact not
+            only individuals but also the broader community and the world. Our
+            vision extends beyond personal and platform growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+<!-- <div class="container" 
+  style="
+    background-image: url('http://localhost/growabhi/assets/frontend/img/home/how_work.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+  "
+>
+</div> -->
+
+
 
 <?php if(get_frontend_settings('upcoming_course_section') == 1): ?>
 <!-- Start Upcoming Courses -->
@@ -266,7 +399,7 @@
 
 <?php if(get_frontend_settings('top_category_section') == 1): ?>
 <!---------- Top Categories Start ------------->
-<section class="courses h-2-courses pb-2 pt-2 bg_custom1">
+<!-- <section class="courses h-2-courses pb-2 pt-2 bg_custom1">
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-3"></div>
@@ -288,8 +421,8 @@
                                     <i class="<?php echo $category_details['font_awesome_class']; ?>"></i>
                                 </a>
                              </div>
-                             <a href="<?php echo site_url('home/courses?category='.$category_details['slug']); ?>" class="text-white"><?php echo $category_details['name']; ?></a>
-                             <p><?php echo $top_10_category['course_number'].' '.site_phrase('Courses'); ?></p>
+                             <a href="<?php echo site_url('home/courses?category='.$category_details['slug']); ?>"><?php echo $category_details['name']; ?></a>
+                             <p style="color:black !important"><?php echo $top_10_category['course_number'].' '.site_phrase('Courses'); ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -299,7 +432,7 @@
 
         
     </div>
-</section>
+</section> -->
 <!---------- Top Categories end ------------->
 <?php endif; ?>
 
@@ -462,7 +595,7 @@
     <div class="container">
         <h1 class="text-center"><span><?php echo site_phrase('top') . ' 10 ' . site_phrase('latest_courses'); ?></span></h1>
         <p class="text-center"><?php echo site_phrase('These_are_the_most_latest_courses_among_Listen_Courses_learners_worldwide')?></p>
-        <div class="courses-card">
+        <div class="courses-card" >
             <div class="course-group-slider ">
                 <?php
                 $latest_courses = $this->crud_model->get_latest_10_course();
@@ -479,8 +612,8 @@
                     }
                     ?>
                     <div class="single-popup-course " >
-                        <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($latest_course['title'])) . '/' . $latest_course['id']); ?>" id="latest_course_<?php echo $latest_course['id']; ?>" class="checkPropagation courses-card-body">
-                            <div class="courses-card-image ">
+                        <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($latest_course['title'])) . '/' . $latest_course['id']); ?>" id="latest_course_<?php echo $latest_course['id']; ?>" class="checkPropagation courses-card-body" style="border: 2px dashed #ec6d9c !important;">
+                            <div class="courses-card-image " >
                                 <img loading="lazy" src="<?php echo $this->crud_model->get_course_thumbnail_url($latest_course['id']); ?>">
                                 <div class="courses-icon <?php if(in_array($latest_course['id'], $my_wishlist_items)) echo 'red-heart'; ?>" id="coursesWishlistIconLatestCourse<?php echo $latest_course['id']; ?>">
                                     <i class="fa-solid fa-heart checkPropagation" onclick="actionTo('<?php echo site_url('home/toggleWishlistItems/'.$latest_course['id'].'/LatestCourse'); ?>')"></i>
@@ -504,21 +637,21 @@
                                         </span>
                                     </div>
                                 </div>
-                                <p class="ellipsis-line-2"  style="color:white !important"><?php echo $latest_course['short_description'] ?></p>
+                                <p class="ellipsis-line-2"  ><?php echo $latest_course['short_description'] ?></p>
                                 <div class="courses-price-border" >
                                     <div class="courses-price">
                                         <div class="courses-price-left">
                                             <?php if($latest_course['is_free_course']): ?>
                                                 <h5><?php echo get_phrase('Free'); ?></h5>
                                             <?php elseif($latest_course['discount_flag']): ?>
-                                                <h5  style="color:white !important"><?php echo currency($latest_course['discounted_price']); ?></h5>
-                                                <p class="mt-1"  style="color:white !important"><del><?php echo currency($latest_course['price']); ?></del></p>
+                                                <h5  ><?php echo currency($latest_course['discounted_price']); ?></h5>
+                                                <p class="mt-1"  ><del><?php echo currency($latest_course['price']); ?></del></p>
                                             <?php else: ?>
-                                                <h5  style="color:white !important"><?php echo currency($latest_course['price']); ?></h5>
+                                                <h5  ><?php echo currency($latest_course['price']); ?></h5>
                                             <?php endif; ?>
                                         </div>
                                         <div class="courses-price-right ">
-                                            <p class="m-0"  style="color:white !important"><i class="fa-regular fa-clock p-0 text-15px"></i> <?php echo $course_duration; ?></p>
+                                            <p class="m-0"  ><i class="fa-regular fa-clock p-0 text-15px"></i> <?php echo $course_duration; ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -615,6 +748,61 @@
 <?php endif; ?>
 
 
+<div style="
+    background-image: url('<?= basE_url();?>assets/frontend/img/home/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;">
+
+ <div class="container py-5" >
+     
+        <div class="row  justify-content-center ">
+            <!-- Statistics Section -->
+             <div class="col-lg-10 text-dark  mb-4">
+        <h1 class="text-center"><span>World's Most Loved <span style="color:#ffbe17">Educational </span> Platform</span></h1>
+        <p class="text-center mt-3">Choose us for a transformative learning experience tailored to your unique goals. Elevate your journey with expert guidance, innovative resources, and a community committed to your success.</p>
+
+          </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <div class="stat-card">
+                            <img src="<?= base_url();?>assets/frontend/img/home/cap.png" class="img-fluid" style="width: 30%;height: 80px">
+                            <h1>25,000<span style="color:#45bcff">+</span></h1>
+                            <p class="text-dark mt-2 mb-4" style="font-size: 16px">Students Enrolled</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="stat-card">
+                             <img src="<?= base_url();?>assets/frontend/img/home/education.png" class="img-fluid" style="width: 30%;height: 80px">
+                            <h1>4<span style="color:#ed4883">+</span></h1>
+                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Years of Educational</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="stat-card">
+                            <img src="<?= base_url();?>assets/frontend/img/home/faculty.png" class="img-fluid" style="width: 30%;height: 80px">
+                            <h1>25<span style="color:#ffb906">+</span></h1>
+                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Expert Faculties</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="stat-card">
+                             <img src="<?= base_url();?>assets/frontend/img/home/country.png" class="img-fluid" style="width: 20%;height: 80px">
+                            <h1>15<span style="color:#9747ff">+</span></h1>
+                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Number of Countries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Globe Image Section -->
+            <div class="col-lg-6">
+                <img src="<?= base_url();?>assets/frontend/img/home/earthImg.png" width="90%" alt="Globe with locations" class="globe-img">
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
 <?php if(get_frontend_settings('top_instructor_section') == 1): ?>
@@ -802,7 +990,7 @@
                         </div>
                         <div class="courses-text bg_custom3">
                             <h5><?php echo $latest_blog['title']; ?></h5>
-                            <p class="ellipsis-line-2"  style="color:white !important"><?php echo ellipsis(strip_tags(htmlspecialchars_decode_($latest_blog['description'])), 150); ?></p>
+                            <p class="ellipsis-line-2"  ><?php echo ellipsis(strip_tags(htmlspecialchars_decode_($latest_blog['description'])), 150); ?></p>
                             <div class="courses-price-border">
                                 <div class="courses-price">
                                     <div class="courses-price-left">
@@ -810,7 +998,7 @@
                                         <h5><?php echo $user_details['first_name'].' '.$user_details['last_name']; ?></h5>
                                     </div>
                                     <div class="courses-price-right ">
-                                        <p  style="color:white !important"><?php echo get_past_time($latest_blog['added_date']); ?></p>
+                                        <p  ><?php echo get_past_time($latest_blog['added_date']); ?></p>
                                     </div>
                                 </div>
                             </div>
