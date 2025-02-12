@@ -1124,7 +1124,7 @@
                             <div class="accordion-item mb-3" style="border: 2px dashed #f84087;border-radius: 10px " >
                               <h2 class="" id="<?php echo 'faqItemHeading'.$key; ?>" >
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo 'faqItempanel'.$key; ?>" aria-expanded="true" aria-controls="<?php echo 'faqItempanel'.$key; ?>" style="font-size: 17px !important">
-                                    <img src="<?= base_url();?>assets/frontend/img/home/checkicon1.png" class="img-fluid"> &nbsp; <?php echo $faq['question']; ?>
+                                    <img src="<?= base_url();?>assets/frontend/img/home/checkIcon1.png" class="img-fluid"> &nbsp; <?php echo $faq['question']; ?>
                                 </button>
                               </h2>
                               <div id="<?php echo 'faqItempanel'.$key; ?>" class="accordion-collapse collapse" aria-labelledby="<?php echo 'faqItemHeading'.$key; ?>"  data-bs-parent="#accordionFaq">
