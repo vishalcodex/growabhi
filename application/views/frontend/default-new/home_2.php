@@ -1,4 +1,19 @@
 <style>
+
+  /* Hide div on mobile (max-width 768px, covers most tablets and smaller screens) */
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+
     .ellipsis-line-1 {
         display: -webkit-box!important; 
         -webkit-line-clamp: 1; 
@@ -224,18 +239,17 @@
 <!---------- Banner Section End ---------------->
  
 <div class="row  justify-content-center text-center text-dark mt-5">
-    
-
-<h1> How GrowAbhi <span style="color:#ffbe17"> Network </span> Work </h1>
-<div class="col-md-8 mt-3">
-    <p> We bridge the gap between learners and expert instructors through our extensive networks, creating a platform for meaningful knowledge exchange. Be a part of our community to embrace the power of accessible education, expert guidance, and collective growth. </p>
+  <h1> How GrowAbhi <span style="color:#ffbe17"> Network </span> Work </h1>
+  <div class="col-md-8 mt-3">
+      <p> We bridge the gap between learners and expert instructors through our extensive networks, creating a platform for meaningful knowledge exchange. Be a part of our community to embrace the power of accessible education, expert guidance, and collective growth. </p>
+  </div>
 </div>
 
-</div>
+
 <div
-  class="container-fluid py-5  text-dark"
+  class="container-fluid py-5  text-dark hide-on-mobile"
   style="
-    background-image: url('http://localhost/growabhi/assets/frontend/img/home/how_work1.png');
+    background-image: url('<?= base_url();?>assets/frontend/img/home/how_work1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -280,7 +294,49 @@
   </div>
 </div>
 
+<!-- Mobile View  -->
 
+
+<div class="container text-center hide-on-desktop">
+    <!-- Top Section: We Grow -->
+    <div class="row text-dark">
+
+       <!-- Left Section: You Grow -->
+      <div class="col-md-4 mt-4 text-center">
+        <img src="<?= base_url();?>assets/frontend/img/home/1.png" class=" p-2" style="width: 30%">
+        <h3 class="fw-bold">You Grow</h3>
+        <p>
+           Our mission is to support your journey of personal and professional development. We provide the knowledge, skills, and tools you need to succeed and evolve continuously.
+
+        </p>
+      </div>
+
+
+
+      <div class="col-md-4 mt-4">
+         <img src="<?= base_url();?>assets/frontend/img/home/2.png" class=" p-2" style="width: 30%">
+        <h3 class="fw-bold">We Grow</h3>
+        <p>
+          Your growth is our priority. Together, we aim to achieve excellence by providing exceptional education and unwavering support.
+
+        </p>
+      </div>
+   
+     
+
+      <!-- Right Section: World Grow -->
+      <div class="col-md-4 mt-4 text-center">
+         <img src="<?= base_url();?>assets/frontend/img/home/3.png" class=" p-2" style="width: 30%">
+        <h3 class="fw-bold">World Grow</h3>
+        <p>
+             Education has the power to transform lives, communities, and the world. Our vision is to create a ripple effect of knowledge that inspires collective growth and progress.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile View end -->
 <!-- <div
   class="container-fluid pt-5 mt-5 pb-5"
   style="
