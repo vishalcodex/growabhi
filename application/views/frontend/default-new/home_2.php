@@ -1,6 +1,10 @@
 <style>
 
+*{
+font-family: 'Montserrat', sans-serif;
 
+
+}
 
 
   /* Hide div on mobile (max-width 768px, covers most tablets and smaller screens) */
@@ -16,6 +20,104 @@
     }
 }
 
+/* CSS testimonials*/
+ .testimonial-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .testimonial-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .testimonial-role {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+/*CSS for CLient*/
+
+ .client-logo-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .client-logo-card:hover {
+      transform: scale(1.05);
+    }
+   
+    .client-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /*CSS Clients*/
+
+     .client-logo-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .client-logo-card:hover {
+      transform: scale(1.05);
+    }
+   
+    .client-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /*CSS Client*/
+
+/*CSS for Course PAckages*/
+
+
+ .tab-btn {
+            border: 2px dashed;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .tab-btn.active {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            border-radius: 10px;
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+
+        .premium-section {
+            border: 2px dashed #6f42c1;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .premium-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /*CSS for course packages end*/
 /*CSS for Socail Media icons*/
 
 /* Style for the social media icons container */
@@ -50,7 +152,7 @@
 
 /* Form Container */
     .form-container {
-      background-color: #f84087; /* Pink background */
+      background-color: #15558f; /* Pink background */
       border-radius: 10px;
       padding: 10px;
       /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);*/
@@ -283,15 +385,151 @@
         </div>  
     </div>
 </section>
+ <!-- Start -->
+
+<div class="row  justify-content-center text-center text-dark mt-5">
+  <h1>Discover Our Popular <span style="color:#ffbe17"> Packages </span> </h1>
+  <div class="col-md-8 mt-3">
+      <p> Reach your goals faster with our expertly designed plans and programs. Enjoy a free trial to experience the benefits firsthand or contact our team for personalized assistance. </p>
+  </div>
+</div>
+
+<div class="container mb-5">
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="justified-tab-0" data-bs-toggle="tab" href="#justified-tabpanel-0" role="tab" aria-controls="justified-tabpanel-0" aria-selected="true"> Single Courses </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="justified-tab-1" data-bs-toggle="tab" href="#justified-tabpanel-1" role="tab" aria-controls="justified-tabpanel-1" aria-selected="false"> Bundle Courses </a>
+    </li>
+   
+  </ul>
+  </div>  
+</div>
+
+<div class="tab-content pt-2 text-dark" id="tab-content">
+
+  <div class="tab-pane active border shadow rounded p-3" id="justified-tabpanel-0" role="tabpanel" aria-labelledby="justified-tab-0">
+   <div class="row">
+        <div class="col-lg-7">
+           <h1>  Single Courses </h1>
+            <h4 class="mt-2"> <i> Master One Skill at a Time </i> </h4>
+           <p class="mt-2">Ideal for learners who prefer to focus on a specific subject or skill. Choose a single course tailored to your interests and master it at your own pace. Perfect for targeted learning and specialized expertise. </p>
+
+           <div class="row mt-3">
+            <!-- Feature 1 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/certified.png" class="img-fluid" alt="Certification">
+                    <span style="font-size: 16px;font-weight: bold">Verified Certification</span>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/programs.png" class="img-fluid" alt="Interactive Learning">
+                    <span style="font-size: 16px;font-weight: bold">Engaging Learning Experience</span>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/time.png" class="img-fluid" alt="Flexible Time">
+                    <span style="font-size: 16px;font-weight: bold">Flexible Scheduling</span>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/access.png" class="img-fluid" alt="Access Anywhere">
+                    <span style="font-size: 16px;font-weight: bold">Learn Anytime, Anywhere</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learn More Button -->
+        <div class="text-center mt-3">
+            <button class="btn btn-warning shadow">Learn More</button>
+        </div>
+        </div>
+         <div class="col-lg-5">
+            <img src="<?= base_url();?>assets/frontend/img/home/single.png" class="img-fluid">
+         </div>
+   </div>
+
+  </div>
+
+  <div class="tab-pane border shadow rounded p-3" id="justified-tabpanel-1" role="tabpanel" aria-labelledby="justified-tab-1">
+   <div class="row">
+        <div class="col-lg-7">
+           <h1>  Bundle Courses</h1>
+            <h4 class="mt-2"> <i>  Expand Your Knowledge Across Multiple Domains</i> </h4>
+           <p class="mt-2">Get access to a collection of curated courses in one comprehensive bundle. Whether you're aiming for professional certifications or multi-disciplinary skills, our bundle package has everything you need to achieve your goals efficiently.</p>
+
+           <div class="row mt-3">
+            <!-- Feature 1 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/certified.png" class="img-fluid" alt="Certification">
+                    <span style="font-size: 16px;font-weight: bold">Verified Certification</span>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/programs.png" class="img-fluid" alt="Interactive Learning">
+                    <span style="font-size: 16px;font-weight: bold">Engaging Learning Experience</span>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/time.png" class="img-fluid" alt="Flexible Time">
+                    <span style="font-size: 16px;font-weight: bold">Flexible Scheduling</span>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col-md-6 mb-3">
+                <div class="feature-box shadow p-1 rounded border">
+                    <img src="<?= base_url();?>assets/frontend/img/home/access.png" class="img-fluid" alt="Access Anywhere">
+                    <span style="font-size: 16px;font-weight: bold">Learn Anytime, Anywhere</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learn More Button -->
+        <div class="text-center mt-3">
+            <button class="btn btn-warning shadow">Learn More</button>
+        </div>
+        </div>
+         <div class="col-lg-5">
+            <img src="<?= base_url();?>assets/frontend/img/home/bundle.png" class="img-fluid">
+         </div>
+   </div>
+
+  </div>
  
+</div>
+
+</div>
+
+ <!-- End -->
 <section class="world-class mb-0">
     <div class="container">
         <div class="world-class-content">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 text-center">
                     <h1>
                         <?php
-                        $we_provides = explode(' ', get_phrase('We Provides you World Class Performance'));
+                        $we_provides = explode(' ', get_phrase('We Provide you World Class Performance'));
                         foreach($we_provides as $key => $value){
                             if($key == 0){
                                 echo '<span>'.$value.'</span>';
@@ -300,13 +538,12 @@
                             }
                         }
                         ?>
-                        <span>.</span>
                     </h1>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-4 col-4">
-                    <div class="world-cls-card">
-                        <div class="image-1">
-                            <img loading="lazy" src="<?php echo site_url('assets/frontend/default-new/'); ?>image/1.png" alt="">
+                <div class="col-lg-3 col-md-4 col-sm-4 ">
+                    <div class="world-cls-card shadow border text-center p-3 rounded mb-1 mt-1" style="text-align: center !important;">
+                        <div class="text-center" >
+                            <img loading="lazy" src="<?php echo site_url('assets/frontend/default-new/'); ?>image/1.png" alt="" style="width: 70px;height: 70px">
                         </div>
                         <?php
                             $status_wise_courses = $this->crud_model->get_status_wise_courses_front();
@@ -316,19 +553,19 @@
                         <h6><?php echo site_phrase('explore_a_variety_of_fresh_topics'); ?></h6>
                     </div>  
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-4 col-4">
-                    <div class="world-cls-card">
-                        <div class="image-2">
-                            <img loading="lazy" src="<?php echo site_url('assets/frontend/default-new/'); ?>image/2.png" alt="">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="world-cls-card shadow border text-center p-3 rounded mb-1 mt-1">
+                        <div class="text-center">
+                            <img loading="lazy" src="<?php echo site_url('assets/frontend/default-new/'); ?>image/2.png" alt="" style="width: 70px;height: 70px">
                         </div>
                         <h4><?php echo site_phrase('expert_instruction'); ?></h4>
                         <h6><?php echo site_phrase('find_the_right_course_for_you'); ?></h6>
                     </div>                        
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-4 col-4">
-                    <div class="world-cls-card">
-                        <div class="image-3">
-                            <img loading="lazy" src="<?php echo site_url('assets/frontend/default-new/'); ?>image/3.png" alt="">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="world-cls-card shadow border text-center p-3 rounded mb-1 mt-1">
+                        <div class="text-center">
+                            <img loading="lazy" src="<?php echo site_url('assets/frontend/default-new/'); ?>image/3.png" alt="" style="width: 70px;height: 70px">
                         </div>
                         <h4><?php echo site_phrase('Smart solution'); ?></h4>
                         <h6><?php echo site_phrase('learn_on_your_schedule'); ?></h6>
@@ -350,51 +587,52 @@
 
 <div
   class="container-fluid py-5  text-dark hide-on-mobile"
-  style="
-    background-image: url('<?= base_url();?>assets/frontend/img/home/how_work1.png');
+  style="background-image: url('<?= base_url();?>assets/frontend/img/home/how_work1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  "
->
+  ">
 
-  <div class="container text-center">
-    <!-- Top Section: We Grow -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-4 mt-4">
-        <h3 class="fw-bold">We Grow</h3>
+<div class="container text-center">
+    <!-- Top Section: Empower Learners -->
+
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-3 mt-1">
+        <h3 class="fw-bold" style="color: #dc3877">Empower Learners</h3>
         <p>
-          Your growth is our priority. Together, we aim to achieve excellence by providing exceptional education and unwavering support.
-
+          <b> GrowAbhi offers top courses, expert guidance, and a supportive community for your success. </b>
+            <br><br><br><br><br>
         </p>
-      </div>
     </div>
-
-    <!-- Bottom Section: You Grow and World Grow -->
-    <div class="row align-items-start">
-      <!-- Left Section: You Grow -->
-      <div class="col-md-4 mt-4 text-center">
-        <h3 class="fw-bold">You Grow</h3>
-        <p>
-           Our mission is to support your journey of personal and professional development. We provide the knowledge, skills, and tools you need to succeed and evolve continuously.
-
-        </p>
-      </div>
-
-      <!-- Spacer -->
-      <div class="col-md-4"></div>
-
-      <!-- Right Section: World Grow -->
-      <div class="col-md-4 mt-4 text-center">
-        <h3 class="fw-bold">World Grow</h3>
-        <p>
-             Education has the power to transform lives, communities, and the world. Our vision is to create a ripple effect of knowledge that inspires collective growth and progress.
-
-        </p>
-      </div>
-    </div>
-  </div>
 </div>
+
+<!-- Bottom Section: Learn, Grow, and Impact -->
+<div class="row align-items-start">
+    <!-- Left Section: Learn -->
+    <div class="col-md-1"></div>
+    <div class="col-md-3 mt-1 text-center">
+        <h3 class="fw-bold" style="color: #febb04">Learn</h3>
+        <p>
+            <b> Access curated courses from foundational to advanced levels, designed by industry experts. </b>
+        </p>
+    </div>
+
+    <!-- Spacer -->
+    <div class="col-md-4 mt-1"></div>
+
+    <!-- Right Section: Grow -->
+    <div class="col-md-3 mt-1 text-center">
+        <h3 class="fw-bold" style="color: #295cc6">Grow</h3>
+        <p>
+          <b>  Gain certifications and tools to turn your skills into impactful opportunities. </b>
+        </p>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+</div>
+</div>
+
 
 <!-- Mobile View  -->
 
@@ -927,29 +1165,30 @@
                     <div class="col-6 mb-4">
                         <div class="stat-card">
                             <img src="<?= base_url();?>assets/frontend/img/home/cap.png" class="img-fluid" style="width: 30% !important;">
-                            <h1>25,000<span style="color:#45bcff">+</span></h1>
-                            <p class="text-dark mt-2 mb-4" style="font-size: 16px">Students Enrolled</p>
+                            <h1>10,000<span style="color:#45bcff">+</span></h1>
+                            <p class="text-dark mt-2 mb-4" style="font-size: 16px">Enrolled Students</p>
                         </div>
                     </div>
                     <div class="col-6 mb-4">
                         <div class="stat-card">
                              <img src="<?= base_url();?>assets/frontend/img/home/education.png" class="img-fluid" style="width: 30% !important;">
-                            <h1>4<span style="color:#ed4883">+</span></h1>
-                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Years of Educational</p>
+                            <h1>10<span style="color:#ed4883">+</span></h1>
+                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Years of Excellence</p>
                         </div>
                     </div>
                     <div class="col-6 mb-4">
                         <div class="stat-card">
                             <img src="<?= base_url();?>assets/frontend/img/home/faculty.png" class="img-fluid" style="width: 30% !important;">
-                            <h1>25<span style="color:#ffb906">+</span></h1>
-                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Expert Faculties</p>
+                            <h1>18<span style="color:#ffb906">+</span></h1>
+                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Expert Educators</p>
                         </div>
                     </div>
                     <div class="col-6 mb-4">
                         <div class="stat-card">
                              <img src="<?= base_url();?>assets/frontend/img/home/country.png" class="img-fluid" style="width: 30% !important;">
-                            <h1>15<span style="color:#9747ff">+</span></h1>
-                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Number of Countries</p>
+                            <h1>14<span style="color:#9747ff">+</span></h1>
+                            <p  class="text-dark mt-2 mb-4" style="font-size: 16px">Global Reach
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1070,6 +1309,7 @@
 <!---------  Motivetional Speech end ---------------->
 <?php endif; ?>
 
+
 <?php if(get_frontend_settings('faq_section') == 1): ?>
 <?php $website_faqs = json_decode(get_frontend_settings('website_faqs'), true); ?>
 <?php if(count($website_faqs) > 0): ?>
@@ -1079,21 +1319,19 @@
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
-                <h1 class="text-center mt-4">Frequently <span style="color:#ffbe17"> Asked </span>  Questions</h1>
+              <h1 class="text-center mt-4">Frequently <span style="color:#ffbe17"> Asked </span>  Questions</h1>
                 <p class="text-center mt-4 mb-5"><?php echo get_phrase('Have something to know?') ?> <?php echo get_phrase('Check here if you have any questions about us.') ?></p>
             </div>
             <div class="col-lg-2"></div>
         </div>
-
         <div class="row">
-             <div class="col-lg-6 mb-4">
-               <div class="form-container">
+            <div class="col-md-6 text-center pb-5">
+               <div class="col-lg-12 mb-4">
+               <div class="form-container shadow border">
                 <div class="row pt-4 mb-4"> 
-                    <div class="col-lg-4 hide-on-mobile">
-                       <img src="<?= base_url();?>assets/frontend/img/home/formGirl.png" class="img-fluid">
-                    </div>
+                    
 
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         
                           <h3 class="mb-4">Have a Question?</h3>
                           <form>
@@ -1116,20 +1354,21 @@
 
                 </div>
           </div>
+            </div>
             <div class="col-md-6">
                 <div class="faq-accrodion mb-0">
                     <div class="accordion" id="accordionFaq">
                         <?php foreach($website_faqs as $key => $faq): ?>
                             <?php if($key > 4) break; ?>
-                            <div class="accordion-item mb-3" style="border: 2px dashed #f84087;border-radius: 10px " >
-                              <h2 class="" id="<?php echo 'faqItemHeading'.$key; ?>" >
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo 'faqItempanel'.$key; ?>" aria-expanded="true" aria-controls="<?php echo 'faqItempanel'.$key; ?>" style="font-size: 17px !important">
-                                    <img src="<?= base_url();?>assets/frontend/img/home/checkIcon1.png" class="img-fluid"> &nbsp; <?php echo $faq['question']; ?>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="<?php echo 'faqItemHeading'.$key; ?>">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo 'faqItempanel'.$key; ?>" aria-expanded="true" aria-controls="<?php echo 'faqItempanel'.$key; ?>">
+                                    <?php echo $faq['question']; ?>
                                 </button>
                               </h2>
                               <div id="<?php echo 'faqItempanel'.$key; ?>" class="accordion-collapse collapse" aria-labelledby="<?php echo 'faqItemHeading'.$key; ?>"  data-bs-parent="#accordionFaq">
-                                <div class="accordion-body p-3">
-                                    <p class=""><?php echo nl2br($faq['answer']); ?></p>
+                                <div class="accordion-body">
+                                    <p><?php echo nl2br($faq['answer']); ?></p>
                                 </div>
                               </div>
                             </div>
@@ -1146,6 +1385,7 @@
 <!---------- Questions Section End  -------------->
 <?php endif; ?>
 <?php endif; ?>
+
 
 
 <?php if(get_frontend_settings('blog_visibility_on_the_home_page') == 1): ?>
@@ -1254,38 +1494,15 @@
 <!------------- Become Students Section End --------->
 
 
-<style>
-    .testimonial-card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    .testimonial-img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
-    .testimonial-name {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .testimonial-role {
-      color: #777;
-      font-size: 0.9rem;
-    }
-  </style>
 
    <div class="container mt-5 mb-5">
-    <h1 class="text-center mb-4"><span>Testimonials </span> </h1>
+    <h1 class="text-center mb-4">Our Most Satisfied Customer Says<span style="color:#ffbe17"> About Us </span> </h1>
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="carousel-inner text-dark">
         <!-- First slide -->
         <div class="carousel-item active">
           <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 ">
               <div class="testimonial-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
                 <h5 class="testimonial-name">John Doe</h5>
@@ -1293,7 +1510,7 @@
                 <p>"Bootstrap makes web development so much easier and faster!"</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 ">
               <div class="testimonial-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
                 <h5 class="testimonial-name">Jane Smith</h5>
@@ -1301,7 +1518,7 @@
                 <p>"I love the flexibility and the built-in responsive design in Bootstrap!"</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 ">
               <div class="testimonial-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
                 <h5 class="testimonial-name">Mike Johnson</h5>
@@ -1314,7 +1531,7 @@
         <!-- Second slide -->
         <div class="carousel-item">
           <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 ">
               <div class="testimonial-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
                 <h5 class="testimonial-name">Emily Davis</h5>
@@ -1322,7 +1539,7 @@
                 <p>"Bootstrap is my go-to framework for every project. It's so reliable."</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 ">
               <div class="testimonial-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
                 <h5 class="testimonial-name">Chris Wilson</h5>
@@ -1330,7 +1547,7 @@
                 <p>"With Bootstrap, I can deliver professional websites much faster."</p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 ">
               <div class="testimonial-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png" alt="User" class="testimonial-img">
                 <h5 class="testimonial-name">Sarah Brown</h5>
@@ -1351,7 +1568,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-             <center>
+             <center class="mb-5">
             <div class=" justify-content-center align-items-center">
                     <button class="btn btn-zoom"> <a href="<?= base_url();?>sign_up" style="color: white !important"> <i class="fas fa-arrow-right me-2"></i> JOIN NOW <i class="fas fa-arrow-left me-2"></i> </a></button>
                 </div>
@@ -1363,45 +1580,24 @@
 
 
  <div class="container mt-5 mb-4">
-    <h1 class="text-center mb-4"> <span> Our Clients </span></h1>
+    <h1 class="text-center mb-4">  Our Valueable <span style="color:#ffbe17"> Clients </span></h1>
     <div class="row g-4  justify-content-center align-items-center">
       <!-- Client 1 -->
       <div class="col-6 col-md-4 col-lg-3">
         <div class="client-logo-card">
           <img src="<?= base_url();?>assets/frontend/img/client/client1.jpeg" alt="Client 1 Logo" class="client-logo rounded">
-          <p class="client-name text-white">Biryani Bar</p>
+          <p class="client-name text-dark">Biryani Bar</p>
         </div>
       </div>
       <!-- Client 2 -->
       <div class="col-6 col-md-4 col-lg-3">
         <div class="client-logo-card">
-           <img src="<?= base_url();?>assets/frontend/img/client/client2.jpeg" alt="Client 1 Logo" class="client-logo rounded">
-          <p class="client-name  text-white">Ginger & Honey Cafe</p>
+           <img src="<?= base_url();?>assets/frontend/img/client/client2.jpg" alt="Client 1 Logo" class="client-logo rounded">
+          <p class="client-name  text-dark">Ginger & Honey Cafe</p>
         </div>
       </div>
      
     </div>
   </div>
 
-   <style>
-    .client-logo-card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-    .client-logo-card:hover {
-      transform: scale(1.05);
-    }
-    .client-logo {
-      width: 100px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    .client-name {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-  </style>
+ 
