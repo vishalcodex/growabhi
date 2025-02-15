@@ -297,6 +297,14 @@ font-family: 'Montserrat', sans-serif;
           color: white;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+}
 
 </style>
 
@@ -319,8 +327,10 @@ font-family: 'Montserrat', sans-serif;
 <!---------- Banner Section Start ---------------->
 <section class="h-1-banner h-2-banner">
   <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-                    <source src="<?= base_url();?>assets/frontend/bgvideo.mp4" type="video/mp4">
+                    <source src="<?= base_url();?>assets/frontend/bgvideo1.mp4" type="video/mp4">
                     </video>
+                        <div class="overlay"></div>
+
                 </div>
     <div class="container" style="position: relative; z-index: 1; color: white; text-align: center; padding-top: 10%;">
         <div class="h-2-banner-text">
@@ -331,7 +341,7 @@ font-family: 'Montserrat', sans-serif;
                         $banner_title = site_phrase(get_frontend_settings('banner_title'));
                         $banner_title_arr = explode(' ', $banner_title);
                     ?>
-                    <h1>
+                    <h1 class="text-white">
                         <?php
                         foreach($banner_title_arr as $key => $value){
                             if($key == count($banner_title_arr) - 1){
