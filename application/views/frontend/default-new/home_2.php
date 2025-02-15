@@ -654,9 +654,10 @@ font-family: 'Montserrat', sans-serif;
        <!-- Left Section: You Grow -->
       <div class="col-md-4 mt-4 text-center">
         <img src="<?= base_url();?>assets/frontend/img/home/1.png" class=" p-2" style="width: 30%">
-        <h3 class="fw-bold">You Grow</h3>
+        <h3 class="fw-bold">Learn</h3>
         <p>
-           Our mission is to support your journey of personal and professional development. We provide the knowledge, skills, and tools you need to succeed and evolve continuously.
+          Access curated courses from foundational to advanced levels, designed by industry experts.
+
 
         </p>
       </div>
@@ -665,9 +666,9 @@ font-family: 'Montserrat', sans-serif;
 
       <div class="col-md-4 mt-4">
          <img src="<?= base_url();?>assets/frontend/img/home/2.png" class=" p-2" style="width: 30%">
-        <h3 class="fw-bold">We Grow</h3>
+        <h3 class="fw-bold">Empower Learners</h3>
         <p>
-          Your growth is our priority. Together, we aim to achieve excellence by providing exceptional education and unwavering support.
+          GrowAbhi offers top courses, expert guidance, and a supportive community for your success.
 
         </p>
       </div>
@@ -677,9 +678,10 @@ font-family: 'Montserrat', sans-serif;
       <!-- Right Section: World Grow -->
       <div class="col-md-4 mt-4 text-center">
          <img src="<?= base_url();?>assets/frontend/img/home/3.png" class=" p-2" style="width: 30%">
-        <h3 class="fw-bold">World Grow</h3>
+        <h3 class="fw-bold">Grow</h3>
         <p>
-             Education has the power to transform lives, communities, and the world. Our vision is to create a ripple effect of knowledge that inspires collective growth and progress.
+            Gain certifications and tools to turn your skills into impactful opportunities.
+
 
         </p>
       </div>
